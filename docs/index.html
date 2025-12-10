@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Todo App</title>
+  <title>Todo App</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container">
-    <h1>My Todo List</h1>
-    <div class="input-area">
-      <input type="text" id="todoInput" placeholder="Add a new todo..." />
-      <button id="addBtn">Add</button>
+  <div class="app-container">
+    <h1 class="title">My Todo List</h1>
+
+    <div class="input-box">
+      <input type="text" id="todoInput" placeholder="Add a new task..." />
+      <button id="addBtn">+</button>
     </div>
-    <ul id="todoList"></ul>
+
+    <ul id="todoList" class="todo-list"></ul>
+
+    <p id="emptyMessage" class="empty">No tasks yet. Add something.</p>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
