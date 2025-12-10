@@ -17,7 +17,7 @@ async function loadConfig() {
 
   // Fallback: local dev uses localhost, otherwise keep the original Vercel-style path
   API_URL = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-    ? "http://localhost:3000/todos"
+    ? "http://localhost:1000/todos"
     : "/api/todos";
 }
 
